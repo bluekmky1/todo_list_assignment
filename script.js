@@ -8,8 +8,8 @@ const todoList = document.getElementById("todo-list");
 
 // 상태 관리 변수
 let todoFormVisible = false;
-let todos = Array.from(JSON.parse(localStorage.getItem("todos"))) || [];
-
+let todos = JSON.parse(localStorage.getItem("todos") || "[]");
+console.log(todos);
 // 초기 렌더링
 renderTodos();
 
