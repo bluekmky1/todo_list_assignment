@@ -161,3 +161,72 @@ li {
   display: flex;
   gap: 5px;
 }
+
+/* 미디어 쿼리: 모바일 화면 대응 */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #title {
+    font-size: 24px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #todo-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #add-todo-btn {
+    margin-top: 10px;
+  }
+
+  #add-todo-input {
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 16px;
+  }
+
+  #todo-input-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #todo-list-container {
+    padding: 10px;
+    margin: 10px auto;
+    min-height: 600px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .todo-text {
+    margin: 10px 0;
+  }
+
+  .edit-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .edit-input {
+    margin: 10px 0;
+  }
+}
